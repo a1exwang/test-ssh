@@ -8,6 +8,6 @@ jobs:
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
-          run: echo "$GITHUB_CONTEXT"
+        run: echo "$GITHUB_CONTEXT"
       # - name: Setup upterm session
       #   uses: lhotari/action-upterm@v1
