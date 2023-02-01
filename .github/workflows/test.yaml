@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: macos-11
     steps:
-      # - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-       - name: Setup upterm session
-         uses: lhotari/action-upterm@v1
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
